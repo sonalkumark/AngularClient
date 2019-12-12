@@ -1,0 +1,8 @@
+<div class="toolbar" role="banner">
+  <span>Welcome</span>
+  <div style="float: right">
+  <button *ngIf="!isAuthenticated" (click)="login()">Login</button>
+  <button *ngIf="isAuthenticated" (click)="logout()">Logout</button>
+  <button (click)="redirectToContent()">Content</button>
+  {{name}}
+</div>
