@@ -29,6 +29,6 @@ jobs:
             - run: echo ${{ secrets.USER_NAME }}
             - run: echo "::${{ secrets.USER_NAME }}"
             - name: testing secret
-              if: env.USER_NAME == 'sonalkumar'
+              if: env.USER_NAME == 'sonkumar'
               run: echo "Success"
               
