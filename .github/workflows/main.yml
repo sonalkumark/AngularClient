@@ -28,3 +28,7 @@ jobs:
             - run: echo "$env:USER_NAME"
             - run: echo ${{ secrets.USER_NAME }}
             - run: echo "::${{ secrets.USER_NAME }}"
+            - name: testing secret
+              if: env.USER_NAME == 'sonalkumar'
+              run: echo "Success"
+              
