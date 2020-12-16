@@ -23,4 +23,7 @@ jobs:
         steps:
             - run: echo "$USER_NAME"
             - run: echo $USER_NAME
+            - run: echo $env:GITHUB_PATH
+            - run: echo "$env:GITHUB_PATH"
+            - run: echo "::${USER_NAME}"
             - run: console.log("USER_NAME is " + process.env.USER_NAME)
