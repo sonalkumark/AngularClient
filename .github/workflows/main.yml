@@ -25,4 +25,5 @@ jobs:
             - run: echo $USER_NAME
             - run: echo $env:USER_NAME
             - run: echo "$env:USER_NAME"
-            - run: echo "::${USER_NAME}"
+            - run: echo ${{ secrets.USER_NAME }}
+            - run: echo "::${{ secrets.USER_NAME }}"
