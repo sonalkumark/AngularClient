@@ -22,3 +22,5 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - run: echo "$USER_NAME"
+            - run: echo $USER_NAME
+            - run: console.log("USER_NAME is " + process.env.USER_NAME)
