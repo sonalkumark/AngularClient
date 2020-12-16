@@ -21,6 +21,7 @@ jobs:
         name: ui-tests
         runs-on: ubuntu-latest
         steps:
+            - run: printenv
             - run: echo "$USER_NAME"
             - run: echo $USER_NAME
             - run: echo $env:USER_NAME
