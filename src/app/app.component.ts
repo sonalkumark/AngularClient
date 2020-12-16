@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularClient';
+  constructor(){
+    const pwd = process.env.USER_NAME;
+    console.log(pwd);
+  }
 }
